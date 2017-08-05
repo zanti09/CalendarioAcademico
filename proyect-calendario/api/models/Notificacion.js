@@ -8,7 +8,24 @@
 module.exports = {
 
   attributes: {
-
+    descripcion: {
+      type: 'string',
+      required: true
+    },
+    fechaNotificacion: {
+      type: "datetime",
+      required:true
+    },
+    fkIdMateria:{
+      model:'Materia',
+      required:true
+    },
+    estado:{
+      type:'string',
+      enum:['En progreso','Realizada'],
+      defaultsTo:'En progreso',
+      required:true
+    }
   }
 };
 

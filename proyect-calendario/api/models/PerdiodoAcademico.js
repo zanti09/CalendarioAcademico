@@ -9,6 +9,32 @@ module.exports = {
 
   attributes: {
 
+    nombre: {
+      type: 'string',
+      required: true
+    },
+    fechaInicio: {
+      type: "date",
+      required: true
+    },
+    fechaFin: {
+      type: "date",
+      required: true
+    },
+    materias:{
+      collection:'Materia',
+      via:'fkIdPeriodoAcademico'
+    },
+    estado: {
+      type: 'string',
+      enum: ['En curso', 'Concretado'],
+      defaultsTo: 'En curso',
+      required:true
+    },
+    fkIdUsuario:{
+      model:'Usuario',
+      required:true
+    }
   }
 };
 
