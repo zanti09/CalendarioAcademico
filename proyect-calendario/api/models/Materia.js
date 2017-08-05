@@ -8,7 +8,26 @@
 module.exports = {
 
   attributes: {
-
+    nombre:{
+      type:'string',
+      required:true
+    },
+    descripcion:{
+      type:'string',
+      required:true
+    },
+    fkIdPeriodoAcademico:{
+      model:'PerdiodoAcademico',
+      required:true
+    },
+    horarios:{
+      collection:'Horario',
+      via:'fkIdMateria'
+    },
+    notificaciones:{
+      collection:'Notificacion',
+      viea:'fkIdMateria'
+    }
   }
 };
 

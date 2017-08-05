@@ -1,0 +1,46 @@
+<h1>Materias</h1>
+<a href="materias/crear">
+
+  <button type="button" class="btn btn-primary">
+    +
+  </button>
+</a>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for(var i=0;i<materias.length;i++){ %>
+  <tr>
+    <td scope="row"><%=materias[i].id%></td>
+    <td><%=materias[i].nombre%></td>
+    <td><%=materias[i].descripcion%></td>
+    <td>
+      <a href="materias/editar?id=<%=materias[i].id%>">
+        <button type="button" class="btn btn-primary">
+          Editar
+        </button>
+      </a>
+    </td>
+    <td>
+      <form action="/Materia/eliminarMateria" method="post">
+
+        <input hidden
+               type="text"
+               value="<%=materias[i].id%>"
+               name="id">
+
+        <button  type="submit"
+                 class="btn btn-outline-danger">Borrar</button>
+
+      </form>
+    </td>
+  </tr>
+  <%}%>
+  </tbody>
+</table>

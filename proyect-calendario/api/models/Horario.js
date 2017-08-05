@@ -8,7 +8,22 @@
 module.exports = {
 
   attributes: {
-
+    dia: {
+      type: 'integer',
+      required: true
+    },
+    horaInicio: {
+      type: 'datetime',
+      required: true
+    },
+    horaFin: {
+      type: 'datetime',
+      required: true
+    },
+    fkIdMateria: {
+      model:'Materia',
+      required:true
+    }
   }
 };
 

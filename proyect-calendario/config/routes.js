@@ -34,6 +34,11 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  '/materias': 'MateriaController.inicioMateria',
+  '/materias/editar': 'MateriaController.irEditar',
+  '/materias/crear': {
+    view:'GestionMaterias/crearMateria'
   }
 
   /***************************************************************************
