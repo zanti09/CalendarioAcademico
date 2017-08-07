@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xl-6">8</div>
+    <div class="col-xl-6"><h1>Registrarse</h1>
+      <form action="/signup" method="post">
+        <div class="form-group row">
+          <label for="name" class="col-2 col-form-label" >Nombres</label>
+          <div class="col-10">
+            <input class="form-control" name="name" placeholder="Ingrese sus nombres" type="text"/>
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="email" class="col-2 col-form-label">Email</label>
+          <div class="col-10">
+            <input class="form-control"  name="email"  placeholder="Ingrese su Email" type="text"/>
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="password" class="col-2 col-form-label">Password</label>
+          <div class="col-10">
+            <input class="form-control" name="password" placeholder="Ingrese una contraseña" type="password"/>
+          </div>
+        </div>
+
+        <input class= "btn btn-outline-success" type="submit"/>
+        <button class="btn btn-outline-warning">
+          <a href="/login">Si ya esta registrado continue</a>
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</div>

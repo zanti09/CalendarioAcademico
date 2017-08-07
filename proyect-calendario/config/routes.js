@@ -33,14 +33,22 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
+    view: 'user/signup',
   },
   '/materias': 'MateriaController.inicioMateria',
   '/materias/editar': 'MateriaController.irEditar',
   '/materias/crear': {
     view:'GestionMaterias/crearMateria'
-  }
+  },
+  'get /login': { view: 'user/login' },
+  'get /signup': { view: 'user/signup' },
+  '/homepage': { view: 'homepage' },
 
+
+// Endpoints
+  'post /login': 'UserController.login',
+  'post /signup': 'UserController.signup',
+  '/logout': 'UserController.logout',
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

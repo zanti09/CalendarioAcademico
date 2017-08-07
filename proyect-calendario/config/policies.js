@@ -19,6 +19,14 @@
 
 module.exports.policies = {
 
+  '*': true,
+
+  UserController: {
+    '*': 'isAuthenticated',
+    login: true,
+    signup: true
+  }
+
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions (`true` allows public     *

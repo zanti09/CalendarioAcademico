@@ -32,7 +32,7 @@ module.exports = {
       required:true
     },
     fkIdUsuario:{
-      model:'Usuario',
+      model:'User',
       required:true
     }
   }
