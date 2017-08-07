@@ -1,0 +1,68 @@
+<h1>Editar Materia</h1>
+
+<form action="/Horario/editarHorario" method="post">
+
+  <input hidden
+         class="form-control"
+         type="text"
+         id="id"
+         name="id"
+         value="<%= horario.id %>">
+
+  <div class="form-group row">
+    <label for="fkIdMateria" class="col-2 col-form-label">Materia</label>
+    <div class="col-10">
+      <select class="form-control" id="fkIdMateria" name="fkIdMateria" >
+        <% for(var i=0;i<materias.length;i++){ %>
+        <option value="<%=materias[i].id%>"
+          <% if (horario.fkIdMateria==materias[i].id)'selected'
+          %>>
+          <%=materias[i].nombre%></option>
+        <%}%>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="dia" class="col-2 col-form-label">Dia</label>
+    <div class="col-10">
+      <select class="form-control" id="dia" name="dia">
+        <option value="1" <% if (horario.dia==1)'selected'
+        %>>Lunes</option>
+        <option value="2" <% if (horario.dia==2)'selected'
+        %>>Martes</option>
+        <option value="3" <% if (horario.dia==3)'selected'
+        %>>Miercoles</option>
+        <option value="4" <% if (horario.dia==4)'selected'
+        %>>Jueves</option>
+        <option value="5" <% if (horario.dia==5)'selected'
+        %>>Viernes</option>
+        <option value="6" <% if (horario.dia==6)'selected'
+        %>>Sabado</option>
+        <option value="7" <% if (horario.dia==7)'selected'
+        %>>Domingo</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="horaInicio" class="col-2 col-form-label">Hora de inicio</label>
+    <div class="col-10">
+      <input class="form-control" type="time" value="<%=dateFormat(horario.horaInicio ,'HH:MM')%>" id="horaInicio" name="horaInicio">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="horaFin" class="col-2 col-form-label">Hora de Fin</label>
+    <div class="col-10">
+      <input class="form-control" type="time" value="<%=dateFormat(horario.horaFin,'HH:MM')%>" id="horaFin" name="horaFin">
+    </div>
+  </div>
+
+  <button
+    class="btn btn-outline-success">Editar</button>
+
+  <button type="reset"
+          class="btn btn-outline-warning">Reset</button>
+
+</form>
