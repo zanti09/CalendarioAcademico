@@ -34,7 +34,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/importer.css">
-    <link rel="stylesheet" href="/styles/styles.css">
     <!--STYLES END-->
   </head>
 
@@ -58,9 +57,17 @@
       </ul>
     </div>
 
-    <div id="principal">
-      <%- body %>
-    </div>
+
+
+
+    <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+
+  <div class="container">
+    <%- body %>
+  </div>
 
 
 
@@ -87,7 +94,7 @@
     -->
 
     <!--TEMPLATES-->
-    
+
     <!--TEMPLATES END-->
 
 
@@ -114,9 +121,7 @@
 
     -->
 
-    <!--SCRIPTS-->
-    <script src="/js/dependencies/sails.io.js"></script>
-    <script src="/js/menu.js"></script>
-    <!--SCRIPTS END-->
-  </body>
+
 </html>
+
+<%- partial('footer.ejs') %>
