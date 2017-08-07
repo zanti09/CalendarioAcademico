@@ -39,7 +39,7 @@ module.exports = {
     }
 
     // Otherwise if this is an HTML-wanting browser, do a redirect.
-    return res.redirect('/homepage');
+    return res.redirect('/');
   },
 
 
