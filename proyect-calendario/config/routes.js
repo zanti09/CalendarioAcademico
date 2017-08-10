@@ -40,6 +40,9 @@ module.exports.routes = {
   '/materias/crear': {
     view:'GestionMaterias/crearMateria'
   },
+  '/horarios':'HorarioController.inicioHorario',
+  '/horarios/crear':'HorarioController.irCrear',
+  '/horarios/editar':'HorarioController.irEditar',
   'get /login': { view: 'user/login' },
   'get /signup': { view: 'user/signup' },
   '/homepage': { view: 'homepage' },
