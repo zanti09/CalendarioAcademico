@@ -34,6 +34,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!--STYLES-->
     <link rel="stylesheet" href="/styles/importer.css">
+    <link rel="stylesheet" href="/styles/styles.css">
     <!--STYLES END-->
   </head>
 
@@ -41,16 +42,22 @@
     <div id="menu">
       <ul class="nav flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Inicio</a>
+          <a class="nav-link active" href="/homepage">Inicio</a>
         </li>
         <li class="nsaav-item">
           Administracion
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Periodo Academico</a>
+              <a class="nav-link active" href="/periodosacademicos">Periodo Academico</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Materias</a>
+              <a class="nav-link active" href="/materias">Materia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/horarios">Horario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/notificaciones">Notificacion</a>
             </li>
           </ul>
         </li>
@@ -58,16 +65,18 @@
     </div>
 
 
+    <div id="principal">
+      <%- body %>
+    </div>
 
+    <%- partial('footer.ejs') %>
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
     <!--SCRIPTS END-->
   </body>
 
-  <div class="container">
-    <%- body %>
-  </div>
+
 
 
 
@@ -94,7 +103,7 @@
     -->
 
     <!--TEMPLATES-->
-
+    
     <!--TEMPLATES END-->
 
 
@@ -121,7 +130,5 @@
 
     -->
 
-
 </html>
 
-<%- partial('footer.ejs') %>
