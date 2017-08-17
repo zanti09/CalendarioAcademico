@@ -1,8 +1,5 @@
-<h1>Notificaciones</h1>
+<h1>Horario</h1>
 
-<a href="horarios/tabla">
-  <button type="button" class="btn btn-primary">Ver Horario</button>
-</a>
 <table class="table">
   <thead>
   <tr>
@@ -26,11 +23,11 @@
       <%for(var k=0;k< 7;k++){%>
       <td >
         <%for(var j=0;j< horarios.length;j++){%>
-          <%  if(i>=horarios[j].horaInicio.getHours()&&i<=(horarios[j].horaFin.getHours()-1)&&horarios[j].dia==k){%>
-            <div class="horario">
-              <%=horarios[j].fkIdMateria.nombre%>
-            </div>
-          <%} %>
+        <%  if(i>=horarios[j].horaInicio.getHours()&&i<=(horarios[j].horaFin.getHours()-1)&&horarios[j].dia==k){%>
+        <div class="horario">
+          <%=horarios[j].fkIdMateria.nombre%>
+        </div>
+        <%} %>
         <%} %>
       </td>
       <%} %>

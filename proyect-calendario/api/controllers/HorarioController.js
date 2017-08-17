@@ -113,7 +113,6 @@ module.exports = {
       .exec(function (err, horarios) {
         if (err)
           return res.negotiate(err);
-        console.log(horarios);
         return res.view('GestionHorarios/horario', {
           horarios: horarios,
           dateFormat:dateFormat
@@ -185,6 +184,34 @@ module.exports = {
         });
       });
 
+  },
+  administrarNotificaciones:function(req,res){
+    var parametros = req.allParams();
+    var fecha = new Date();
+    fecha.setDate((fecha.getDate()-fecha.getDay())-(parametros.pag*7));
+
+    Horario.find().populate('fkIdMateria')
+      .exec(function (err, horarios) {
+        if (err)
+          return res.negotiate(err);
+        return res.view('homepage', {
+          horarios: horarios
+        });
+      });
+  },
+  mostrarHorario:function(req,res){
+    var parametros = req.allParams();
+    var fecha = new Date();
+    fecha.setDate((fecha.getDate()-fecha.getDay())-(parametros.pag*7));
+
+    Horario.find().populate('fkIdMateria')
+      .exec(function (err, horarios) {
+        if (err)
+          return res.negotiate(err);
+        return res.view('GestionHorarios/tablaHorario', {
+          horarios: horarios
+        });
+      });
   }
 };
 

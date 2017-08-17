@@ -25,7 +25,12 @@ module.exports.policies = {
     '*': 'isAuthenticated',
     login: true,
     signup: true
-  }
+  }/*,
+  HorarioController:{
+    '*': 'isAuthenticated',
+    login: true,
+    signup: true
+  }*/
 
   /***************************************************************************
   *                                                                          *

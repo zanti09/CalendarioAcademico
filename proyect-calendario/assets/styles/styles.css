@@ -17,3 +17,11 @@
   background-color: aliceblue;
   text-align: center;
 }
+
+.filaCalendario{
+  height: 60px;
+}
+
+.horario{
+  background-color: #0c8da0;
+}

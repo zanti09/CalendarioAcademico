@@ -27,6 +27,8 @@
     <label for="dia" class="col-2 col-form-label">Dia</label>
     <div class="col-10">
       <select class="form-control" id="dia" name="dia">
+        <option value="0" <% if (horario.dia==0   )'selected'
+        %>>Domingo</option>
         <option value="1" <% if (horario.dia==1)'selected'
         %>>Lunes</option>
         <option value="2" <% if (horario.dia==2)'selected'
@@ -39,8 +41,6 @@
         %>>Viernes</option>
         <option value="6" <% if (horario.dia==6)'selected'
         %>>Sabado</option>
-        <option value="7" <% if (horario.dia==7)'selected'
-        %>>Domingo</option>
       </select>
     </div>
   </div>

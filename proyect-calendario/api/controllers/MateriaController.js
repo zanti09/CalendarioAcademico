@@ -141,6 +141,9 @@ module.exports = {
     else {
       return res.redirect('/materias/crear');
     }
+  },
+  irCrear: function (req, res) {
+    return res.view('GestionMaterias/crearMateria');
   }
 };
 

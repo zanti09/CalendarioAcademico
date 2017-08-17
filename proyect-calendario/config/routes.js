@@ -37,15 +37,14 @@ module.exports.routes = {
   },
   '/materias': 'MateriaController.inicioMateria',
   '/materias/editar': 'MateriaController.irEditar',
-  '/materias/crear': {
-    view:'GestionMaterias/crearMateria'
-  },
+  '/materias/crear': 'MateriaController.irCrear',
   '/horarios':'HorarioController.inicioHorario',
   '/horarios/crear':'HorarioController.irCrear',
   '/horarios/editar':'HorarioController.irEditar',
   'get /login': { view: 'user/login' },
   'get /signup': { view: 'user/signup' },
-  '/homepage': { view: 'homepage' },
+  '/homepage': 'HorarioController.administrarNotificaciones',
+  '/horarios/tabla':'HorarioController.mostrarHorario',
 
 
 // Endpoints
