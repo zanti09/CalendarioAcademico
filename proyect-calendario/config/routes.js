@@ -45,6 +45,12 @@ module.exports.routes = {
   'get /signup': { view: 'user/signup' },
   '/homepage': 'HorarioController.administrarNotificaciones',
   '/horarios/tabla':'HorarioController.mostrarHorario',
+  '/periodos': 'PerdiodoAcademicoController.inicioPeriodoAcademico',
+  '/periodos/editar': 'PerdiodoAcademicoController.irEditar',
+  '/periodos/crear': 'PerdiodoAcademicoController.irCrear',
+  '/notificaciones': 'NotificacionController.inicioNotificacion',
+  '/notificaciones/editar': 'NotificacionController.irEditar',
+  '/notificaciones/crear': 'NotificacionController.irCrear',
 
 
 // Endpoints

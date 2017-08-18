@@ -1,0 +1,51 @@
+<%var dias=['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo']%>
+<h1>Horarios</h1>
+<a href="horarios/crear">
+
+  <button type="button" class="btn btn-primary">
+    +
+  </button>
+</a>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>Materia</th>
+    <th>Día</th>
+    <th>Hora de Inicio</th>
+    <th>Hora de Fin</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for(var i=0;i<horarios.length;i++){ %>
+  <tr>
+    <td scope="row"><%=horarios[i].id%></td>
+    <td><%=horarios[i].fkIdMateria.nombre%></td>
+    <td><%=dias[horarios[i].dia-1]%></td>
+    <td><%=dateFormat(horarios[i].horaInicio,'HH:MM')%></td>
+    <td><%=dateFormat(horarios[i].horaFin,'HH:MM')%></td>
+    <td>
+      <a href="horarios/editar?id=<%=horarios[i].id%>">
+        <button type="button" class="btn btn-primary">
+          Editar
+        </button>
+      </a>
+    </td>
+    <td>
+      <form action="/Horario/eliminarHorario" method="post">
+
+        <input hidden
+               type="text"
+               value="<%=horarios[i].id%>"
+               name="id">
+
+        <button  type="submit"
+                 class="btn btn-outline-danger">Borrar</button>
+
+      </form>
+    </td>
+  </tr>
+  <%}%>
+  </tbody>
+</table>

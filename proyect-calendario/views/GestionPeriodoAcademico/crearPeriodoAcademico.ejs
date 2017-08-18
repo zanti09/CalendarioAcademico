@@ -1,0 +1,47 @@
+<h1>Crear Periodo Académico</h1>
+
+<form action="/PerdiodoAcademico/crearPeriodoAcademico" method="post">
+
+  <div class="form-group row">
+    <label for="nombre" class="col-2 col-form-label">Nombre</label>
+    <div class="col-10">
+      <input class="form-control"
+             type="text"
+             placeholder="Ingrese el nombre del periodo académico"
+             id="nombre"
+             name="nombre"
+      >
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="estado" class="col-2 col-form-label">Estado</label>
+    <div class="col-10">
+      <select class="form-control" id="dia" name="dia">
+        <option value="0">En curso</option>
+        <option value="1">Concretado</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="fechaInicio" class="col-2 col-form-label">Fecha de inicio</label>
+    <div class="col-10">
+      <input class="form-control" type="date"  id="fechaInicio" name="fechaInicio">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="fechaFin" class="col-2 col-form-label">Fecha de fin</label>
+    <div class="col-10">
+      <input class="form-control" type="date"  id="fechaFin" name="fechaFin">
+    </div>
+  </div>
+
+  <button
+    class="btn btn-outline-success">Crear</button>
+
+  <button type="reset"
+          class="btn btn-outline-warning">Reset</button>
+
+</form>
