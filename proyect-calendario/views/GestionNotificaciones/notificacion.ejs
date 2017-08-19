@@ -1,0 +1,51 @@
+<%var estados=['En progreso','Realizada']%>
+<h1>Notificaciones</h1>
+<a href="notificaciones/crear">
+
+  <button type="button" class="btn btn-primary">
+    +
+  </button>
+</a>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>Materia</th>
+    <th>Descripcion</th>
+    <th>Fecha de la Notificacion</th>
+    <th>Estado</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% for(var i=0;i<notificaciones.length;i++){ %>
+  <tr>
+    <td scope="row"><%=notificaciones[i].id%></td>
+    <td><%=notificaciones[i].fkIdMateria.nombre%></td>
+    <td><%=notificaciones[i].descripcion%></td>
+    <td><%=dateFormat(notificaciones[i].fechaNotificacion,'yyyy-mm-dd HH:MM')%></td>
+    <td><%=estados[notificaciones[i].estados-1]%></td>
+    <td>
+      <a href="notificaciones/editar?id=<%=notificaciones[i].id%>">
+        <button type="button" class="btn btn-primary">
+          Editar
+        </button>
+      </a>
+    </td>
+    <td>
+      <form action="/Notificacion/eliminarHorario" method="post">
+
+        <input hidden
+               type="text"
+               value="<%=notificaciones[i].id%>"
+               name="id">
+
+        <button  type="submit"
+                 class="btn btn-outline-danger">Borrar</button>
+
+      </form>
+    </td>
+  </tr>
+  <%}%>
+  </tbody>
+</table>

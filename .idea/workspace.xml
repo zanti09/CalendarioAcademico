@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="054394f1-0031-4beb-b185-a101056e7728" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/editarNotificacion.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/notificacion.ejs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/editarNotificacion.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/notificacion.ejs" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/crearNotificacion.ejs" afterPath="$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/crearNotificacion.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyect-calendario/api/controllers/NotificacionController.js" afterPath="$PROJECT_DIR$/proyect-calendario/api/controllers/NotificacionController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyect-calendario/api/controllers/PerdiodoAcademicoController.js" afterPath="$PROJECT_DIR$/proyect-calendario/api/controllers/PerdiodoAcademicoController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyect-calendario/config/routes.js" afterPath="$PROJECT_DIR$/proyect-calendario/config/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearPeriodoAcademico.ejs" afterPath="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearPeriodoAcademico.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/editarPeriodoAcademico.ejs" afterPath="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/editarPeriodoAcademico.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/periodoAcademico.ejs" afterPath="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/periodoAcademico.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyect-calendario/views/layout.ejs" afterPath="$PROJECT_DIR$/proyect-calendario/views/layout.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +31,8 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyect-calendario/config/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="317">
+              <caret line="47" column="66" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="66" />
               <folding>
                 <marker date="1503095760687" expanded="true" signature="1655:1668" ph="{&quot;view&quot;: 'homepage'...}" />
               </folding>
@@ -34,28 +43,28 @@
       <file leaf-file-name="HorarioController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/HorarioController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="237">
+              <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PerdiodoAcademicoController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PerdiodoAcademicoController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/PerdiodoAcademicoController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="138" column="45" lean-forward="true" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
+            <state relative-caret-position="-126">
+              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MateriaController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/MateriaController.js">
+      <file leaf-file-name="PerdiodoAcademico.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyect-calendario/api/models/PerdiodoAcademico.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2412">
-              <caret line="134" column="16" lean-forward="false" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+            <state relative-caret-position="8">
+              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -64,8 +73,18 @@
       <file leaf-file-name="crearPeriodoAcademico.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearPeriodoAcademico.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="60" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="60" />
+            <state relative-caret-position="234">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="31" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notificacion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyect-calendario/api/models/Notificacion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -74,8 +93,8 @@
       <file leaf-file-name="editarPeriodoAcademico.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/editarPeriodoAcademico.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="62" />
+            <state relative-caret-position="810">
+              <caret line="45" column="104" lean-forward="false" selection-start-line="45" selection-start-column="104" selection-end-line="45" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -84,38 +103,28 @@
       <file leaf-file-name="periodoAcademico.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/periodoAcademico.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="126">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="materia.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionMaterias/materia.ejs">
+      <file leaf-file-name="crearNotificacion.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/crearNotificacion.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crearMateria.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionMaterias/crearMateria.ejs">
+      <file leaf-file-name="crearHorario.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionHorarios/crearHorario.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="16" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editarMateria.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionMaterias/editarMateria.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -131,6 +140,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>crear</find>
+      <find>dia</find>
+      <find>Notification</find>
+      <find>ed</find>
+      <find>inicioH</find>
+      <find>modi</find>
+      <find>inicioPeriodoAcademico</find>
+      <find>hor</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -143,15 +164,22 @@
         <option value="$PROJECT_DIR$/proyect-calendario/api/controllers/UserController.js" />
         <option value="$PROJECT_DIR$/proyect-calendario/assets/styles/importer.less" />
         <option value="$PROJECT_DIR$/proyect-calendario/views/footer.ejs" />
-        <option value="$PROJECT_DIR$/proyect-calendario/views/layout.ejs" />
         <option value="$PROJECT_DIR$/proyect-calendario/views/user/signup.ejs" />
         <option value="$PROJECT_DIR$/proyect-calendario/views/homepage.ejs" />
         <option value="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearMateria.ejs" />
         <option value="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearHorario.ejs" />
-        <option value="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/editarPeriodoAcademico.ejs" />
         <option value="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearPeriodoAcademico.ejs" />
+        <option value="$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/crearNotificacion.ejs" />
+        <option value="$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/editarNotificacion.ejs" />
+        <option value="$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/notificacion.ejs" />
+        <option value="$PROJECT_DIR$/proyect-calendario/api/controllers/NotificacionController.js" />
+        <option value="$PROJECT_DIR$/proyect-calendario/views/layout.ejs" />
+        <option value="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/editarPeriodoAcademico.ejs" />
         <option value="$PROJECT_DIR$/proyect-calendario/config/routes.js" />
         <option value="$PROJECT_DIR$/proyect-calendario/api/controllers/PerdiodoAcademicoController.js" />
+        <option value="$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/editarNotificacion.ejs" />
+        <option value="$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/periodoAcademico.ejs" />
+        <option value="$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/crearNotificacion.ejs" />
       </list>
     </option>
   </component>
@@ -188,6 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -273,6 +302,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="GestionNotificaciones" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CalendarioAcademico" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CalendarioAcademico" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proyect-calendario" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="GestionMaterias" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -313,11 +364,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gestion Notificaciones" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,7 +432,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,14 +547,16 @@
       <workItem from="1502756314550" duration="1012000" />
       <workItem from="1503077714026" duration="2752000" />
       <workItem from="1503092466254" duration="4794000" />
+      <workItem from="1503103034926" duration="8213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23169000" />
+    <option name="totallyTimeSpent" value="31382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30729166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -516,7 +564,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09165303" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27659574" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -540,35 +588,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/config/local.js" />
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/config/log.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/config/views.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1265">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/tasks/pipeline.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/assets/js/dependencies/sails.io.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proyect-calendario/assets/js/menu.js" />
     <entry file="file://$PROJECT_DIR$/proyect-calendario/assets/styles/styles.css" />
     <entry file="file://$PROJECT_DIR$/proyect-calendario/views/homepage.ejs">
@@ -679,81 +698,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503092237582" expanded="true" signature="673:1338" ph="/** Default policy for all controllers and actions (`true` allows public ...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyect-calendario/api/policies/isAuthenticated.js" />
     <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/UserController.js" />
     <entry file="file://$PROJECT_DIR$/proyect-calendario/views/footer.ejs" />
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/layout.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="92" column="9" lean-forward="false" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proyect-calendario/views/user/signup.ejs" />
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/homepage.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/crearPeriodoAcademico.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/crearPeriodoAcademico.ejs" />
     <entry file="file://$PROJECT_DIR$/proyect-calendario/assets/styles/importer.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearMateria.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="65" lean-forward="false" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/Gestion Notificaciones/crearNotificacion.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/api/models/PerdiodoAcademico.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearMateria.ejs" />
     <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionHorarios/editarHorario.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionHorarios/crearHorario.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -764,7 +725,7 @@
     <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionMaterias/crearMateria.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="16" selection-end-column="8" />
+          <caret line="16" column="8" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="16" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -772,36 +733,28 @@
     <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionMaterias/editarMateria.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="21" selection-end-column="8" />
+          <caret line="21" column="8" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="21" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearPeriodoAcademico.ejs">
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/homepage.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="60" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="60" />
+        <state relative-caret-position="810">
+          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/editarPeriodoAcademico.ejs">
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/MateriaController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="62" />
+        <state relative-caret-position="746">
+          <caret line="134" column="16" lean-forward="false" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/periodoAcademico.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionMaterias/materia.ejs">
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionHorarios/horario.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -809,36 +762,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionMaterias/materia.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/notificacion.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/NotificacionController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/proyect-calendario/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="317">
+          <caret line="47" column="66" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="66" />
           <folding>
             <marker date="1503095760687" expanded="true" signature="1655:1668" ph="{&quot;view&quot;: 'homepage'...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/HorarioController.js">
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/api/models/Notificacion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="324">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/MateriaController.js">
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/api/models/PerdiodoAcademico.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2412">
-          <caret line="134" column="16" lean-forward="false" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+        <state relative-caret-position="8">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/HorarioController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyect-calendario/api/controllers/PerdiodoAcademicoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="138" column="45" lean-forward="true" selection-start-line="138" selection-start-column="45" selection-end-line="138" selection-end-column="45" />
+        <state relative-caret-position="-126">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/editarNotificacion.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="41" column="60" lean-forward="false" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/editarPeriodoAcademico.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="104" lean-forward="false" selection-start-line="45" selection-start-column="104" selection-end-line="45" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/periodoAcademico.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionHorarios/crearHorario.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionPeriodoAcademico/crearPeriodoAcademico.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="31" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyect-calendario/views/GestionNotificaciones/crearNotificacion.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="43" column="2" lean-forward="false" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
           <folding />
         </state>
       </provider>

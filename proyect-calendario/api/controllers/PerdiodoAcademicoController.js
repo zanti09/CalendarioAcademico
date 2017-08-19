@@ -1,7 +1,7 @@
 /**
- * HorarioController
+ * PerdiodoAcademicoController
  *
- * @description :: Server-side logic for managing Horarios
+ * @description :: Server-side logic for managing Periodos Academicos
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 var dateFormat = require('dateformat');
@@ -17,10 +17,11 @@ module.exports = {
       var fechaInicio = new Date(parametros.fechaInicio);
       var fechaFin = new Date(parametros.fechaFin);
       nuevoPeriodoAcademico={
+        fkIdUsuario:1,
         nombre:parametros.nombre,
         estado:parametros.estado,
         fechaInicio:fechaInicio,
-        fechaFin:fechaFin,
+        fechaFin:fechaFin
         };
       PerdiodoAcademico.create(nuevoPeriodoAcademico)
         .exec(function (error, periodoAcademicoNueno) {
@@ -99,13 +100,13 @@ module.exports = {
   },
   inicioPeriodoAcademico: function (req, res) {
     var parametros = req.allParams();
-    PeriodoAcademico
+    PerdiodoAcademico
       .find()
       .exec(function (err, periodos) {
         if (err)
           return res.negotiate(err);
         return res.view('GestionPeriodoAcademico/periodoAcademico', {
-          periodos: perioddos,
+          periodos: periodos,
           dateFormat:dateFormat
         });
       });
@@ -140,44 +141,7 @@ module.exports = {
     }
   },
   irCrear:function (req, res) {
-    Materia
-      .find()
-      .exec(function (err, materias) {
-        if (err)
-          return res.negotiate(err);
-        return res.view('GestionHorarios/crearHorario', {
-          materias: materias
-        });
-      });
-
-  },
-  administrarNotificaciones:function(req,res){
-    var parametros = req.allParams();
-    var fecha = new Date();
-    fecha.setDate((fecha.getDate()-fecha.getDay())-(parametros.pag*7));
-
-    Horario.find().populate('fkIdMateria')
-      .exec(function (err, horarios) {
-        if (err)
-          return res.negotiate(err);
-        return res.view('homepage', {
-          horarios: horarios
-        });
-      });
-  },
-  mostrarHorario:function(req,res){
-    var parametros = req.allParams();
-    var fecha = new Date();
-    fecha.setDate((fecha.getDate()-fecha.getDay())-(parametros.pag*7));
-
-    Horario.find().populate('fkIdMateria')
-      .exec(function (err, horarios) {
-        if (err)
-          return res.negotiate(err);
-        return res.view('GestionHorarios/tablaHorario', {
-          horarios: horarios
-        });
-      });
+    return res.view('GestionPeriodoAcademico/crearPeriodoAcademico')
   }
 };
 

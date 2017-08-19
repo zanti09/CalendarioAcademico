@@ -1,6 +1,6 @@
 <h1>Editar Periodo Académico</h1>
 
-<form action="/PerdiodoAcademico/editarPerdiodoAcademico" method="post">
+<form action="/PerdiodoAcademico/editarPeriodoAcademico" method="post">
 
   <input hidden
          class="form-control"
@@ -24,10 +24,10 @@
   <div class="form-group row">
     <label for="estado" class="col-2 col-form-label">Estado</label>
     <div class="col-10">
-      <select class="form-control" id="dia" name="dia">
-        <option value="0" <% if (periodoAcademico.estado==0   )'selected'
+      <select class="form-control" id="estado" name="estado">
+        <option value="En curso" <% if (periodoAcademico.estado=='En curso')'selected'
         %>>En curso</option>
-        <option value="1" <% if (periodoAcademico.estado==1)'selected'
+        <option value="Concretado" <% if (periodoAcademico.estado=='Concretado')'selected'
         %>>Concretado</option>
       </select>
     </div>
@@ -36,14 +36,14 @@
   <div class="form-group row">
     <label for="fechaInicio" class="col-2 col-form-label">Fecha de inicio</label>
     <div class="col-10">
-      <input class="form-control" type="date" value="<%=dateFormat(periodoAcademico.fechaInicio ,'yyyy-MM-dd')%>" id="fechaInicio" name="fechaInicio">
+      <input class="form-control" type="date" value="<%=dateFormat(periodoAcademico.fechaInicio ,'yyyy-mm-dd')%>" id="fechaInicio" name="fechaInicio">
     </div>
   </div>
 
   <div class="form-group row">
-    <label for="fechaFin" class="col-2 col-form-label">Fecha de fin</label>
+    <label for="fechaFin" class="col-2 col-form-label"> Fecha de fin</label>
     <div class="col-10">
-      <input class="form-control" type="date" value="<%=dateFormat(periodoAcademico.fechaFin,'yyyy-MM-dd')%>" id="fechaFin" name="fechaFin">
+      <input class="form-control" type="date" value="<%=dateFormat(periodoAcademico.fechaFin,'yyyy-mm-dd')%>" id="fechaFin" name="fechaFin">
     </div>
   </div>
 

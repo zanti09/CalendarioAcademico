@@ -1,6 +1,6 @@
-<%var dias=['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo']%>
-<h1>Horarios</h1>
-<a href="horarios/crear">
+<%var estados=['En curso','Concretado']%>
+<h1>Periodos Academicos</h1>
+<a href="periodos/crear">
 
   <button type="button" class="btn btn-primary">
     +
@@ -11,33 +11,33 @@
   <thead>
   <tr>
     <th>id</th>
-    <th>Materia</th>
-    <th>Día</th>
-    <th>Hora de Inicio</th>
-    <th>Hora de Fin</th>
+    <th>Nombre</th>
+    <th>Fecha de Inicio</th>
+    <th>Fecha de Fin</th>
+    <th>Estado</th>
   </tr>
   </thead>
   <tbody>
-  <% for(var i=0;i<horarios.length;i++){ %>
+  <% for(var i=0;i<periodos.length;i++){ %>
   <tr>
-    <td scope="row"><%=horarios[i].id%></td>
-    <td><%=horarios[i].fkIdMateria.nombre%></td>
-    <td><%=dias[horarios[i].dia-1]%></td>
-    <td><%=dateFormat(horarios[i].horaInicio,'HH:MM')%></td>
-    <td><%=dateFormat(horarios[i].horaFin,'HH:MM')%></td>
+    <td scope="row"><%=periodos[i].id%></td>
+    <td><%=periodos[i].nombre%></td>
+    <td><%=dateFormat(periodos[i].fechaInicio,'yyyy-mm-dd')%></td>
+    <td><%=dateFormat(periodos[i].fechaFin,'yyyy-mm-dd')%></td>
+    <td><%=estados[periodos[i].estado]%></td>
     <td>
-      <a href="horarios/editar?id=<%=horarios[i].id%>">
+      <a href="periodos/editar?id=<%=periodos[i].id%>">
         <button type="button" class="btn btn-primary">
           Editar
         </button>
       </a>
     </td>
     <td>
-      <form action="/Horario/eliminarHorario" method="post">
+      <form action="/PerdiodoAcademico/eliminarPeriodoAcademico" method="post">
 
         <input hidden
                type="text"
-               value="<%=horarios[i].id%>"
+               value="<%=periodos[i].id%>"
                name="id">
 
         <button  type="submit"
