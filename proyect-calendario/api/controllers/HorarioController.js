@@ -5,7 +5,7 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 var dateFormat = require('dateformat');
-
+var semana = 0;
 module.exports = {
   crearHorario: function (req, res) {
     var parametros = req.allParams();
@@ -187,15 +187,33 @@ module.exports = {
   },
   administrarNotificaciones:function(req,res){
     var parametros = req.allParams();
-    var fecha = new Date();
-    fecha.setDate((fecha.getDate()-fecha.getDay())-(parametros.pag*7));
+    var fechaInicio = new Date();
+    if(parametros.act=='f'){
+      semana=semana+1;
+    }else if(parametros.act=='b'){
+      semana=semana-1;
+    }
+    fechaInicio.setDate((fechaInicio.getDate()-fechaInicio.getDay())+(semana*7));
+    var fechaFin = new Date();
+    fechaFin.setDate(fechaInicio.getDate()+6);
 
-    Horario.find().populate('fkIdMateria')
+    var fechas = [];
+
+    for(var i=0;i<7;i++){
+      var fecha = new Date(fechaInicio);
+      fecha.setDate(fecha.getDate()+i);
+      fechas.push(fecha);
+    }
+
+    Notificacion.find({ fechaNotificacion: { '>': fechaInicio, '<': fechaFin } }).populate('fkIdMateria')
       .exec(function (err, horarios) {
         if (err)
           return res.negotiate(err);
         return res.view('homepage', {
-          horarios: horarios
+          horarios: horarios,
+          dateFormat:dateFormat,
+          fechas:fechas,
+          semana:semana
         });
       });
   },

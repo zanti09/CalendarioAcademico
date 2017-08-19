@@ -15,10 +15,11 @@ module.exports = {
       parametros.descripcion &&
       parametros.fkIdMateria) {
       var fechaNotificacion = new Date(parametros.fechaNotificacion);
+      fechaNotificacion.setHours(fechaNotificacion.getHours()+5);
       nuevaNotificacion={
         estado:parametros.estado,
         fechaNotificacion:fechaNotificacion,
-        descripcion:description,
+        descripcion:parametros.descripcion,
         fkIdMateria:parametros.fkIdMateria
       };
       Notificacion.create(nuevaNotificacion)

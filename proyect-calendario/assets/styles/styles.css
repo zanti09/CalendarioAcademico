@@ -25,3 +25,10 @@
 .horario{
   background-color: #0c8da0;
 }
+
+#btnAdelante{
+  right: 100px;
+}
+#btnAtras{
+  left: 100px;
+}

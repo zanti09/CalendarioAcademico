@@ -24,7 +24,7 @@
     <td><%=notificaciones[i].fkIdMateria.nombre%></td>
     <td><%=notificaciones[i].descripcion%></td>
     <td><%=dateFormat(notificaciones[i].fechaNotificacion,'yyyy-mm-dd HH:MM')%></td>
-    <td><%=estados[notificaciones[i].estados-1]%></td>
+    <td><%=notificaciones[i].estado%></td>
     <td>
       <a href="notificaciones/editar?id=<%=notificaciones[i].id%>">
         <button type="button" class="btn btn-primary">

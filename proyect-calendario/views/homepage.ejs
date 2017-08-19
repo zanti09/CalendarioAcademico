@@ -3,32 +3,44 @@
 <a href="horarios/tabla">
   <button type="button" class="btn btn-primary">Ver Horario</button>
 </a>
+<a href="homepage?act=b">
+  <button id="btnAtras" class="boton"><i class="material-icons iconSize48 iconColorGray">keyboard_arrow_left</i></button>
+</a>
+<a href="homepage?act=f">
+  <button id="btnAdelante" class="boton"><i class="material-icons iconSize48 iconColorGray">keyboard_arrow_right</i></button>
+</a>
 <table class="table">
   <thead>
   <tr>
+
     <th>Hora</th>
-    <th>Domingo</th>
-    <th>Lunes</th>
-    <th>Martes</th>
-    <th>Miercoles</th>
-    <th>Jueves</th>
-    <th>Viernes</th>
-    <th>Sábado</th>
+    <% for(var i=0;i< fechas.length;i++){ %>
+    <% if(i==0){%><th>Domingo </br> <%=dateFormat(fechas[i],'mm-dd')%></th><%}%>
+    <% if(i==1){%><th>Lunes </br> <%=dateFormat(fechas[i],'mm-dd')%></th><%}%>
+    <% if(i==2){%><th>Martes </br> <%=dateFormat(fechas[i],'mm-dd')%></th><%}%>
+    <% if(i==3){%><th>Miercoles </br> <%=dateFormat(fechas[i],'mm-dd')%></th><%}%>
+    <% if(i==4){%><th>Jueves </br> <%=dateFormat(fechas[i],'mm-dd')%></th><%}%>
+    <% if(i==5){%><th>Viernes </br> <%=dateFormat(fechas[i],'mm-dd')%></th><%}%>
+    <% if(i==6){%><th>Sábado </br> <%=dateFormat(fechas[i],'mm-dd')%></th><%}%>
+    <%}%>
   </tr>
   </thead>
   <tbody>
-  <% for(var i=6;i< 21;i++){ %>
+  <% for(var i=6;i< 24;i++){ %>
   <tc >
     <tr class="filaCalendario">
       <td>
-        <%=i%>:00 - <%=i+1%>:00
+        <%=i%>:00
       </td>
       <%for(var k=0;k< 7;k++){%>
       <td >
+
         <%for(var j=0;j< horarios.length;j++){%>
-          <%  if(i>=horarios[j].horaInicio.getHours()&&i<=(horarios[j].horaFin.getHours()-1)&&horarios[j].dia==k){%>
+          <%  if(horarios[j].fechaNotificacion.getHours()==i&&horarios[j].fechaNotificacion.getDay()==k){%>
             <div class="horario">
               <%=horarios[j].fkIdMateria.nombre%>
+              </br>
+              <%=horarios[j].descripcion  %>
             </div>
           <%} %>
         <%} %>
